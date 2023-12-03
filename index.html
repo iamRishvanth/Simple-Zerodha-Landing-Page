@@ -3,12 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Zerodha by iamRishvanth</title>
   </head>
   <body>
     <header>
-      <nav>
-        <a href="/"><img src="/assets/logo.svg" alt="logo" srcset="" /></a>
+      <nav id="navbar">
+        <a href="/" id="logo-a"
+          ><img src="/assets/logo.svg" alt="logo" srcset="" id="logo"
+        /></a>
         <ul>
           <li>
             <a
@@ -56,13 +65,18 @@
         </ul>
       </nav>
     </header>
-    <section>
-      <img src="/assets/landing.png" alt="landing" srcset="" />
-      <h1>Invest in everything</h1>
+    <section id="hero">
+      <img src="/assets/landing.png" alt="landing" srcset="" id="landing-img" />
+      <h1 id="head-line">Invest in everything</h1>
       <p>
         Online platform to invest in stocks, derivatives, mutual funds, and more
       </p>
-      <input type="button" value="Sign up now" />
+      <input
+        type="button"
+        value="Sign up now"
+        id="signup-btn"
+        onclick="window.location.href='https://signup.zerodha.com/';"
+      />
     </section>
   </body>
 </html>
